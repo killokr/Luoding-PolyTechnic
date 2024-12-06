@@ -1,0 +1,118 @@
+/*========global========*/
+*{ margin: 0; padding: 0; list-style-type: none; text-decoration: none; font-size: 14px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.container{ width: 1170px; margin: 0 auto; }
+.container::after{ clear: both; content: ''; display: block; }
+/*========global========*/
+
+/*========topper========*/
+.top{ height: 94px; margin: 40px 0 20px; }
+/*========topper========*/
+
+/*========header========*/
+.header{ height: 60px; background-color: #175B98; color: #fff; }
+.header .container .head{ display: flex; }
+.header .container .head .header_list{ flex-grow: 1; position: relative; float: left; line-height: 60px; cursor: pointer; text-align: center; }
+.header .container .head .header_list .header_list2{ position: absolute; display: none; min-width: 160px; top: 100%; left: 0; box-shadow: 0 6px 12px rgba(0,0,0,.175); z-index: 9; }
+.header .container .head .header_list .header_list2 li{ line-height: 14px; background-color: rgba(23,91,152,0.8); min-width: 230px; text-align: left; }
+.header .container .head .header_list .header_list2 li:hover{ background-color: #fff; }
+.header .container .head .header_list .header_list2 li a{ padding: 10px; display: inline-block; color: #fff; }
+.header .container .head .header_list .header_list2 li:hover a{  color: #337ab7; }
+.header .container .head .header_list .header_list2 li .header_list2_wrap{ margin-top: 5px; }
+.header .container .head .header_list:hover{ background-color: #fff; color: #337ab7; }
+.header .container .head .header_list:hover .header_list2{ display: block; }
+/*========header========*/
+
+/*========nav========*/
+.nav{ margin-top: 20px; }
+.nav .container .silder{ width: 1170px; position: relative; height: 390px; overflow: hidden; float: left; }
+.nav .container .silder a{ position: absolute; display: block; }
+.nav .container .silder a img{ width: 1170px; }
+.nav .container .silder .btn{ position: absolute; top: 50%; width: 40px; height: 80px; line-height: 80px; text-align: center; cursor: pointer; background-color: #fff; }
+.nav .container .silder .btn:hover{ background-color: #175B98; }
+.nav .container .silder .btn:hover .iconfont{ color: #fff; }
+.nav .container .silder .prev{ margin-top: -40px; }
+.nav .container .silder .next{ right: 0; margin-top: -40px; }
+.nav .container .silder div>.iconfont{ color: #175b98; font-weight: 100; font-size: 40px; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.nav .container .silder .points{ width: 60%; height: 20px; position: absolute; left: 50%; margin-left: -30%; bottom: 20px; text-align: center; margin-bottom: 10px; }
+.nav .container .silder .points li{ display: inline-block; width: 10px; height: 10px; margin: 1px; background-color: rgba(0,0,0,0); border-radius: 50%; cursor: pointer; border: 1px solid #fff; box-sizing: border-box; }
+.nav .container .silder .points li.active{ background-color: #fff; width: 12px; height: 12px; }
+/*========nav========*/
+
+/*========news-column========*/
+.college_news .container .news_title{ margin: 24px 0; column-count: 2; }
+.college_news .container .news_title .news_title_l{ color: #777; }
+.college_news .container .news_title .news_title_l h4{ display: inline-block; font-weight: 500; font-size: 20px; }
+.college_news .container .news_title a{ text-align: right; color: #5F5F5F; display: block; }
+.college_news .container .news_title a span{ width: 60px; height: 24px; border-radius: 25px; border: 1px solid #5f5f5f; text-align: center; display: inline-block; line-height: 26px; }
+.college_news .container .news_title a span:hover{ color: #175B98; border: 1px solid #175B98; }
+.college_news .container .news_img{ display: flex; justify-content: space-between; }
+.college_news .container .news_img div{ width: 380px; height: 250px; display: inline-block; }
+.college_news .container .news_img div a{ display: block; position: relative; }
+.college_news .container .news_img div a img{ width: 380px; height: 250px; object-fit: cover; }
+.college_news .container .news_img div a .news_name{ position: absolute; left: 0; bottom: 5px; width: 380px; height: 32px; background-color: rgba(51,51,51,0.3); }
+.college_news .container .news_img div a .news_name p{ width: 364px; margin: 0 auto; line-height: 32px; color: #fff; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.college_news .container .news_content{ margin: 10px 0 20px 0; display: flex; width: 1170px; justify-content: space-between; }
+.college_news .container .news_content a{ color: #333; padding: 10px 0; display: block; height: 20px; }
+.college_news .container .news_content a:hover *{ color: #23527c !important; }
+/*.college_news .container .news_content a:hover .list_dates{ color: #23527c; }*/
+.college_news .container .news_content a .list_title{ float: left; }
+.college_news .container .news_content a .list_dates{ color: #999; margin-left: 10px; line-height: 20px; }
+.college_news .container .news_content p{ width: 450px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/*========news-column========*/
+
+/*========college_cotent========*/
+.college_content{ background-color: #f4f4f4; padding: 30px 0; }
+.college_content .container .content_box>div{ display: flex; }
+.college_content .container .content_box>div>div{ margin-bottom: 20px; background-color: #fff; padding: 20px 20px 0; border-bottom: 2px solid #e5e5e5; position: relative; }
+.college_content .container .content_box>div>.college_content_l{ margin-right: 20px; flex-shrink: 0; width: 575px; height: 240px; box-sizing: border-box; }
+.college_content .container .content_box .content_l{ width: 154px; position: relative; padding-left: 10px }
+.college_content .container .content_box .content_l h4{ font-size: 20px; line-height: 28px; font-weight: 500; }
+.college_content .container .content_box .content_l .content_subtitle{ color: #999; width: 160px; display: block; line-height: 1; }
+.college_content .container .content_box .content_l .content_more{ font-size: 12px; color: #999; line-height: 28px; cursor: pointer; }
+.college_content .container .content_box .content_l .content_more:hover{ color: #175B98; }
+.college_content .container .content_box .content_l img{ position: absolute; bottom: 20px; width: 100px; left: 10px; }
+.college_content .container .content_box>div>div{ display: flex; }
+.college_content .container .content_box .college_content_b{ height: 240px; }
+.college_content .container .content_box .college_content_b .college_content_r{ box-sizing: border-box; height: 240px; }
+.college_content .container .content_box div .content_r a{ display: inline-block; color: #333; margin-bottom: 16px; height: 20px; }
+.college_content .container .content_box div .content_r a:hover *{ color: #175B98 !important; }
+.college_content .container .content_box div .content_r a .list_titles{ display: inline-block; float: left; }
+.college_content .container .content_box div .content_r a .list_titles p{ width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.college_content .container .content_box div .content_r a .list_dates{ margin-left: 10px; line-height: 20px; color: #999; }
+.college_content .container .content_box>div>div .dot{ width: 18px; height: 2px; background-color: #e5e5e5; margin-top: -8px; position: absolute; top: 246px; right: 20px; }
+.college_content .container .content_box>div>div .dot div{ width: 3px; height: 2px; background-color: #fff; }
+.college_content .container .content_box>div>div .dot .dot-2{ margin: -2px 0 0 -5px; }
+.college_content .container .content_box>div>div .dot .dot-3{ margin: -2px 0 0 -10px; }
+/*========college_cotent========*/
+
+/*========nav_icon_list========*/
+.nav_icon .container .nav_icon_list{ display: flex; flex-wrap: wrap; width: 1200px; padding-top: 55px; }
+.nav_icon .container .nav_icon_list li{ text-align: center; width: 232px; height: 160px; margin: 6px 6px 6px 0; display: inline-block; }
+.nav_icon .container .nav_icon_list li:first-child{ margin-left: 6px; }
+.nav_icon .container .nav_icon_list li a{ display: inline-block; color: #333; width: 100%; padding: 26px 0; }
+.nav_icon .container .nav_icon_list li a:hover{ box-shadow: #ccc 0.5px 0.5px 2px 0.5px; }
+/*========nav_icon_list========*/
+
+/*========nav_icon_list2========*/
+.nav_icon2 h4,.nav_icon2 h5{ font-weight: 500; }
+.nav_icon2 .container .nav_icon_list{ padding: 0 15px; margin-bottom: 10px; width: 1170px; display: flex; box-sizing: border-box; }
+.nav_icon2 .container h4{ color: #175B98; font-size: 24px; margin: 26px 0 30px 0; text-align: center; }
+.nav_icon2 .container .nav_icon_list li{ text-align: center; display: inline-block; width: 130px; height: 130px; padding: 18px; margin: 0 125px 42px 0; box-sizing: border-box; flex-shrink: 0; }
+.nav_icon2 .container .nav_icon_list li:last-child{ margin-right: 0; }
+.nav_icon2 .container .nav_icon_list li:hover{ border: 1px solid #175B98; border-radius: 50%; padding-top: 17px; margin-bottom: 38px; }
+.nav_icon2 .container .nav_icon_list li:hover a{ color: #175B98; }
+.nav_icon2 .container .nav_icon_list li a{ display: inline-block; width: 100%; height: 100%; color: #999; }
+/*========nav_icon_list2========*/
+
+/*========footer========*/
+.footer{ background-color: #175B98; padding: 30px 15px 0; }
+.footer .container .footer_box{ width: 1026px; margin: 0 auto; }
+.footer .container .footer_box .footer_left{ display: inline-block; }
+.footer .container .footer_box .footer_left .flag{ border-right: 1px solid #fff; margin-right: 15px; display: inline-block; float: left; }
+.footer .container .footer_box .footer_left .flag img{ width: 80px; height: 84px; }
+.footer .container .footer_box .footer_left .school_content{ display: inline-block; width: 930px; }
+.footer .container .footer_box .footer_left .school_content p{ display: inline-block; color: #fff; margin-bottom: 10px; }
+.footer .container .footer_box .footer_left .school_content p a{ color: #fff; }
+.footer .container .footer_box .footer_left .school_content p a img{ vertical-align: middle; } /*粤公网图标*/
+.footer .container .footer_box .safe_icon{ display: inline-block; position: absolute; margin: 30px 0 0 -60px; cursor: pointer; }
+/*========footer========*/
